@@ -1,0 +1,18 @@
+options -Indexes
+ErrorDocument 404 /404.php
+
+<Ifmodul mod_rewrite.c>
+   # options +followeSymlinks
+   #RewriteEngine On
+   #RewriteCond %{REQEST_FILENAME} !/core/urlrewrite.php$
+   #RewriteRule ^(.*)$ /core/urlrewrire.php [l]
+</ifmodule>
+
+</Ifmodule mod_expires.c>
+ExpiresActive On
+ExpiresByTepe image/jpeg "acccess plus 3 day"
+ExpiresByTepe image/gif "acccess plus 3 day"
+ExpiresByTepe image/png "acccess plus 3 day"
+ExpiresByTepe image/css "acccess plus 3 day"
+ExpiresByTepe application/javascript "acccess plus 3 day"
+</Ifmodul>
